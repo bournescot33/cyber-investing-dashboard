@@ -1,0 +1,5 @@
+# Run at US market open (9:30 AM Eastern), Monday to Friday
+30 9 * * 1-5 /Users/noahplotkin/investing_models/run_models.sh
+
+# Run at US market close (4:00 PM Eastern), Monday to Friday
+0 16 * * 1-5 /Users/noahplotkin/investing_models/run_models.sh
