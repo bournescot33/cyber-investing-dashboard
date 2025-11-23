@@ -1,34 +1,37 @@
-# -----------------------------------------
-# PURE-PLAY CYBERSECURITY COMPANIES
-# -----------------------------------------
+# src/tickers.py
+
+# Pure-play cybersecurity universe
+
 PURE_PLAY_CYBER = [
-    "CRWD",   # CrowdStrike – endpoint/XDR
-    "S",      # SentinelOne – endpoint/XDR
-    "PANW",   # Palo Alto Networks – firewall + platform
-    "FTNT",   # Fortinet – firewall + security fabric
-    "NET",    # Cloudflare – Zero Trust / edge security
-    "ZS",     # Zscaler – Zero Trust / SSE
-    "OKTA",   # Okta – identity & access
-    "TENB",   # Tenable – vulnerability mgmt
-    "QLYS",   # Qualys – vulnerability, cloud security
-    "CHKP",   # Check Point – firewall + threat prevention
+    # Endpoint / XDR
+    "CRWD",  # CrowdStrike
+    "S",     # SentinelOne
+
+    # Network Security
+    "PANW",  # Palo Alto Networks
+    "FTNT",  # Fortinet
+    "CHKP",  # Check Point
+
+    # SSE / Zero Trust / App Security
+    "ZS",    # Zscaler
+    "NET",   # Cloudflare (security-heavy revenue mix)
+
+    # Identity & Access
+    "OKTA",  # Okta
+
+    # Data Protection
+    "VRNS",  # Varonis
+
+    # Vulnerability Management
+    "TENB",  # Tenable
+    "RPD",   # Rapid7
+    "QLYS",  # Qualys
+
+    # Consumer Cyber
+    "GEN",   # Gen Digital (NortonLifeLock)
 ]
 
+# For now, we are NOT tracking cloud/platform leaders.
+# Keeping the variable for future use, but leave it empty.
+CLOUD_SECURITY_LEADERS = []
 
-# -----------------------------------------
-# CLOUD / PLATFORM SECURITY LEADERS
-# -----------------------------------------
-CLOUD_SECURITY_LEADERS = [
-    "MSFT",   # Microsoft security portfolio
-    "GOOGL",  # Google Cloud + Mandiant
-    "AMZN",   # AWS security services
-    "SNOW",   # Snowflake – data governance + security
-    "DDOG",   # Datadog – cloud SIEM + detection
-    "CSCO",   # Cisco – Duo, firewall, XDR
-]
-
-
-# -----------------------------------------
-# FULL WATCHLIST (all companies to analyze)
-# -----------------------------------------
-WATCHLIST = PURE_PLAY_CYBER + CLOUD_SECURITY_LEADERS
